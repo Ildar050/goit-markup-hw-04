@@ -167,31 +167,18 @@ border-bottom: 1px solid var(--header-border);
 .features .feature-item:nth-child(4n){
   margin-right: 0;
   }
-
-  .feature-item::before {
-  display: block;
-  content: "";
+.icon-block {
+  border-radius: 4px;
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color:rgba(245,244,250,1);
 }
-
-.icon-delivery::before {
-  background-image: url("../images/cat.png");
+.features-icon{
+  margin-left: 100px;
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
 }
-
-.icon-mobile::before {
-  background-image: url("../images/mobile-icon.svg");
-}
-
-.icon-code::before {
-  background-image: url("../images/code-icon.svg");
-}
-
-
-
+  
 .images-do {
   display:flex;
 }
@@ -211,7 +198,8 @@ border-bottom: 1px solid var(--header-border);
    0px 1px 1px rgba(0, 0, 0, 0.14), 
    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
   width: 270px;
   background-color: var(--background-color);
 }
@@ -224,10 +212,7 @@ border-bottom: 1px solid var(--header-border);
   padding-bottom: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  
-  
-
-}
+  }
 
 
 /* section and team */
@@ -267,6 +252,33 @@ border-bottom: 1px solid var(--header-border);
   line-height: 1.19;
   text-align: center;
 }
+
+.actions {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color:cornflowerblue;
+  outline: 1px solid red;
+  
+  }
+.action {
+  color:red;
+  background-color: blueviolet;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px; 
+}
+.action:hover {
+  color:#fff;
+    }  
+
+.btn-icon {
+  fill:currentColor;
+  
+}
+
+
+
 /* features */
 .feature-list {
   padding-top: 94px;
@@ -370,10 +382,11 @@ margin-left:auto;
 .filter .link:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-   0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
 }
 
 .filter {
@@ -449,6 +462,8 @@ margin-left:auto;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   1px 4px 6px rgba(0, 0, 0, 0.16);
+  
+
 }
 
 .detail .link {
