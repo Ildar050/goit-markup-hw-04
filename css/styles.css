@@ -56,12 +56,28 @@ border-bottom: 1px solid var(--header-border);
 /* logo */
 .contacts .link:hover,
 .contacts .link:focus {
-  color: var(--accent-color);
+color: var(--accent-color);
+fill: var(--accent-color);
+}
+.contact-icon {
+width: 16px;
+height: 12px;
+margin-right: 10px;
+
+fill: var(--primary-text-color);
 }
 
-.gen-logo {
-  
+.contact-icon:hover {
+fill: var(--accent-color);
+}
 
+.pro:hover{
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+
+.gen-logo {
   color: var(--accent-color);
   text-decoration: none;
   font-family: Raleway; sans-serif;
@@ -69,6 +85,7 @@ border-bottom: 1px solid var(--header-border);
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logo2 {
   color: var(--title-text-color);
 }
@@ -323,6 +340,21 @@ border-bottom: 1px solid var(--header-border);
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+.regular-clients{
+  display: flex;
+  justify-content: center;
+}
+
+.regular-box + .regular-box {
+  margin-left: 30px;
+}
+.clients-box {
+  width: 170px;
+  height: 90px;
+  background-color: ;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
 }
 
 /* footer */
