@@ -146,10 +146,8 @@ fill: var(--accent-color);
   background-color: rgba(196,196,196,1);
   
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
   background-image: linear-gradient( to right ,
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4) ) , 
@@ -186,13 +184,15 @@ fill: var(--accent-color);
   margin-right: 0;
   }
 .icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   height: 120px;
   background-color:rgba(245,244,250,1);
 }
 .features-icon{
-  margin-left: 100px;
-  margin-top: 25px;
+  
   width: 70px;
   height: 70px;
 }
@@ -227,9 +227,9 @@ fill: var(--accent-color);
 
 .cadres-content {
   padding-top: 30px;
-  padding-bottom: 16px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   }
 
 
@@ -274,6 +274,7 @@ fill: var(--accent-color);
 .actions {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
   
 }
 .actions .bits:not(:last-child) {
@@ -584,6 +585,7 @@ margin-left:auto;
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 /* Join */
 .join-title {
